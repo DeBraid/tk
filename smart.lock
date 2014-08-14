@@ -11,7 +11,8 @@
         "branch": "master"
       },
       "iron-router-progress": {},
-      "spin": {}
+      "spin": {},
+      "animate-css": {}
     },
     "packages": {
       "iron-router": {
@@ -48,6 +49,11 @@
         "git": "https://github.com/SachaG/meteor-spin.git",
         "tag": "v2.0.4",
         "commit": "f7b1e12a7caff1283cdb3671a393c182d0ae9862"
+      },
+      "animate-css": {
+        "git": "https://github.com/nate-strauser/meteor-animate-css.git",
+        "tag": "v3.1.1",
+        "commit": "59ce70b99dff5bc3d1227b789eefa43a761db158"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

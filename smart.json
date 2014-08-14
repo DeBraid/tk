@@ -8,6 +8,7 @@
       "git": "https://github.com/rgoomar/Bootstrap-Validator"
     },
     "iron-router-progress": {},
-    "spin": {}
+    "spin": {},
+    "animate-css": {}
   }
 }
