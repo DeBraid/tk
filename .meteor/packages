@@ -19,3 +19,6 @@ Bootstrap-Validator
 iron-router-progress
 spin
 animate-css
+velocityjs
+animation-helper
+iron-transitioner

@@ -9,6 +9,9 @@
     },
     "iron-router-progress": {},
     "spin": {},
-    "animate-css": {}
+    "animate-css": {},
+    "velocityjs": {},
+    "animation-helper": {},
+    "iron-transitioner": {}
   }
 }
