@@ -4,24 +4,26 @@ Router.configure({
   loadingTemplate: 'loading',
   notFoundTemplate: 'notFound'
 });
+
 // Initialize the loading template before hand
 
 animateContentOut = function() {
     $('#yielding').removeClass("animated fadeIn");
-    return $('footer').addClass("hide");
-}
+    
+};
 
 // define this as a global onBeforeAction so it happens all the time
 // Router.onBeforeAction('loading');
 Router.onBeforeAction(animateContentOut)
 
+
 fadeContentIn = function() {
     $('#yielding').addClass("animated fadeIn");
-    return $('footer').removeClass("hide");
+
 }
 
 // define this as a global onAfterAction so it happens all the time
-Router.onAfterAction(animateContentOut)
+Router.onAfterAction(fadeContentIn)
 // Map the routes
 Router.map(function() {
   // Homepage
