@@ -179,3 +179,23 @@ body {
         {
           border-bottom-width: 0.5em;
         }
+
+.yielding {
+    opacity: 1; // value after the animate class got removed
+    transition: opacity 1200ms;
+    top: 50%;
+}
+.yielding.animate {
+    opacity: 0; // initial value
+}
+
+
+.btn-info {
+  background-color: #805BDE;
+  border-color: rgba(255, 34, 240, 0.78);
+  
+  &:hover {
+    background-color: rgba(251, 141, 196, 0.78);
+    border-color: #FFF;
+  };
+}
