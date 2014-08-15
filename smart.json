@@ -11,6 +11,7 @@
     "spin": {},
     "animate-css": {},
     "velocityjs": {},
-    "animation-helper": {}
+    "animation-helper": {},
+    "iron-transitioner": {}
   }
 }

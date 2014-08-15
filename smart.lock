@@ -14,7 +14,8 @@
       "spin": {},
       "animate-css": {},
       "velocityjs": {},
-      "animation-helper": {}
+      "animation-helper": {},
+      "iron-transitioner": {}
     },
     "packages": {
       "iron-router": {
@@ -64,8 +65,13 @@
       },
       "animation-helper": {
         "git": "https://github.com/frozeman/meteor-animation-helper.git",
-        "tag": "v0.0.3",
-        "commit": "174b69145c30fa193f33abb2be43407c0338ff94"
+        "tag": "v0.0.4",
+        "commit": "352884091bd4876873ba3f7ff4d93998b3deecc3"
+      },
+      "iron-transitioner": {
+        "git": "https://github.com/percolatestudio/iron-transitioner.git",
+        "tag": "v0.1.0",
+        "commit": "4a5db7d9c7e212d8784b86aa833334e619bb4bd3"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

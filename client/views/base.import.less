@@ -2,14 +2,25 @@ html {
   height: 100%;
 }
 body {
-  // Offset the fixed navbar
-  margin-top: 65px;
-  background-image: url('bg.jpg');
+  
+  background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    color-stop(0, #95657b), 
+    color-stop(0.8, #eeb6a5)
+  );
+  background-image: -o-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: -moz-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: -webkit-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: -ms-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: linear-gradient(to left top, #95657b 0%, #eeb6a5 50%);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 // Add in row and column centering
 .row-centered {
     text-align:center;
@@ -87,7 +98,7 @@ body {
   {
     text-align: center;
     height: 6.25em;
-    margin: 4em 2em 4em 2em; 
+    margin: 4em 1em 1em 1em; 
     cursor: default;
   }
   
@@ -194,10 +205,10 @@ body {
 
 .btn-info {
   background-color: #805BDE;
-  border-color: rgba(255, 34, 240, 0.78);
+  border-color: rgba(255, 255, 255, 0.5);
   
   &:hover {
-    background-color: rgba(251, 141, 196, 0.78);
+    background-color: rgba(251, 141, 196, 0.8);
     border-color: #FFF;
   };
 }
