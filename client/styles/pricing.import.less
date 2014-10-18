@@ -53,22 +53,6 @@
 #request-appt {
   margin: 1em 0 1em 0;
 }
-@media (max-width: 600px) {
-  .price {
-    line-height: 1.25em;
-    font-size: 1.75em;
-  }
-}
-
-@media (max-width: 400px) {
-  .col-md-4 {
-    width: 48%;
-  }
-  .price {
-    line-height: 1em;
-    font-size: 1.5em;
-  }
-}
 
 .panel > .panel-heading {
  background-color : transparent; 
@@ -87,7 +71,6 @@
         1px 1px 0 #000;
   
   border-bottom: 3px solid rgba(0,0,0,0.5);
-  
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -130,4 +113,24 @@
 .service-heading {
   text-align: center;
   text-shadow: 1px 1px 1px #FFF;
+}
+@media (max-width: 625px) {
+  .col-md-4 {
+    width: 48%;
+  }
+  .price {
+    line-height: 1.25em;
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 430px) {
+  .price {
+    line-height: 1em;
+    font-size: 1.25em;
+    margin: 25px; 
+  }
+  .panel-body {
+    padding: 1px;
+  }
 }
