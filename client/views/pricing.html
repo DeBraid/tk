@@ -5,11 +5,16 @@ I kindof want it to be a list that if you scroll your mouse over it, it will exp
   <div class="row">
     {{#each services }}
     <div class="col-md-4">
-      <div class="panel panel-default">
-       <div class="panel-heading">{{ service }}</div>
+      <div class="panel panel-{{ klass }}">
+       <div class="panel-heading">
+         <h4>{{ service }}</h4>
+       </div>
        <div class="panel-body">
          
-         <h1>{{price}}</h1>
+         <h1 class="price">
+           <i class="fa fa-usd"></i> 
+           {{ price }}
+         </h1>
 
        </div>
       </div>
