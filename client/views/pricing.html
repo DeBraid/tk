@@ -1,0 +1,20 @@
+<template name="pricing">
+<!-- 
+I kindof want it to be a list that if you scroll your mouse over it, it will expand and show a description of the specific service.  
+ -->
+  <div class="row">
+    {{#each services }}
+    <div class="col-md-4">
+      <div class="panel panel-default">
+       <div class="panel-heading">{{ service }}</div>
+       <div class="panel-body">
+         
+         <h1>{{price}}</h1>
+
+       </div>
+      </div>
+    </div>
+    {{/each }} 
+  </div>
+
+</template>

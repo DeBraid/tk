@@ -34,6 +34,10 @@ Router.map(function() {
   this.route('work', {
     path: '/work'
   });
+
+  this.route('pricing', {
+    path: '/pricing'
+  });
   
   this.route('contact', {
     path: '/contact',
