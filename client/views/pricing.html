@@ -2,6 +2,7 @@
 <!-- 
 I kindof want it to be a list that if you scroll your mouse over it, it will expand and show a description of the specific service.  
  -->
+  {{> reqAppt}}
   <div class="row">
     {{#each services }}
     <div class="col-md-4">
@@ -13,13 +14,26 @@ I kindof want it to be a list that if you scroll your mouse over it, it will exp
          
          <h1 class="price">
            <i class="fa fa-usd"></i> 
-           {{ price }}
+           {{ price }} 
          </h1>
-
        </div>
       </div>
     </div>
     {{/each }} 
   </div>
 
+  {{> reqAppt}}
+
+</template>
+
+<template name="reqAppt">
+  <div id="request-appt" class="row">
+    
+    {{#Animate}}
+      <a class="pull-right" href="{{pathFor 'contact'}}">
+        <button type="submit" name="submit" class="btn btn-info btn-lg pull-right animated swing">Request Appointment</button>
+      </a>
+    {{/Animate}}
+
+  </div>
 </template>
