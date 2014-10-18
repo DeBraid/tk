@@ -18,28 +18,24 @@
 .panel {
   width:100%;
   background-color : transparent;
+  border: none;
 }
 
 .panel-warning h1 {
-  color: #8A6D3B;
-  background-color: #FCF8E3;
   text-shadow: 3px 3px 3px #FAEBCC;
 }
 
 .panel-success h1 {
-  color: #3C763D;
-  background-color: #DFF0D8;
   text-shadow: 3px 3px 3px #D6E9C6;
 }
 
 .panel-info h1 {
-  color: #31708F;
-  background-color: #D9EDF7;
   text-shadow: 3px 3px 3px #BCE8F1;
 }
 
 .price {
   line-height: 2em;
+  color: #555555;
   text-align: center;
   border-radius: 0.2em;
 }
@@ -51,6 +47,12 @@
 #request-appt {
   margin: 1em 0 1em 0;
 }
+@media (max-width: 600px) {
+  .price {
+    line-height: 1.25em;
+    font-size: 1.75em;
+  }
+}
 
 @media (max-width: 400px) {
   .col-md-4 {
@@ -60,4 +62,67 @@
     line-height: 1em;
     font-size: 1.5em;
   }
+}
+
+.panel > .panel-heading {
+ background-color : transparent; 
+}
+
+.price {
+  color:#323030;
+  text-align:center;
+  font-size:24px;
+  padding:10px;
+  
+  text-shadow: /* Simulating Text Stroke */
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+  
+  border: 1px solid rgba(0,0,0,0.5);
+  border-bottom: 3px solid rgba(0,0,0,0.5);
+  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  
+  background: rgba(0,0,0,0.25);
+
+    -o-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+  
+  box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+
+  margin: 40px;
+  text-decoration: none;
+  background-color : transparent; 
+}
+
+.service-heading {
+  text-align: center;
+  text-shadow: 1px 1px 1px #FFF;
 }
