@@ -25,11 +25,17 @@
   text-shadow: 3px 3px 3px #FAEBCC;
 }
 
-.panel-info .service-heading {
-  color: rgb(169, 14, 92);
+.panel-warning .price {
+  color: #8A6D3B;
+}
+.panel-success .price {
+  color: #3C763D;
 }
 
-
+.panel-info .service-heading,
+.panel-info .price {
+  color: rgb(169, 14, 92);
+}
 
 .panel-success h1 {
   text-shadow: 3px 3px 3px #D6E9C6;
@@ -41,7 +47,6 @@
 
 .price {
   line-height: 2em;
-  color: #555555;
   text-align: center;
   border-radius: 0.2em;
 }
@@ -99,14 +104,13 @@
         inset 0 -15px 30px rgba(0,0,0,0.3);
   
   box-shadow: 
-        0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+        0 2px 5px rgba(0,0,0,0.5), /* Exterior Shadow */
         inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
         inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
         inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
         inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
 
   margin: 40px;
-  text-decoration: none;
   background-color : transparent; 
 }
 
