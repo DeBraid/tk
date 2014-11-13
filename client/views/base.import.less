@@ -74,6 +74,14 @@ body {
   letter-spacing: -1px;
 }
 
+@media (max-width: 400px) {
+  .featurette-image {
+    max-width: 66%;
+  }
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
@@ -113,6 +121,9 @@ body {
       -ms-transition: opacity .25s ease-in-out;
       transition: opacity .25s ease-in-out;
     }
+    #nav a span {
+      opacity: 1;
+    }
 
       #nav a:before
       {
@@ -141,14 +152,14 @@ body {
       {
         display: block;
         position: absolute;
-        background: #805BDE;
-        color: #FFF;
+        /*background: #805BDE;*/
+        color: #805BDE;
         top: -2.75em;
         font-size: 0.3em;
         height: 2.25em;
         line-height: 2.25em;
         left: 50%;
-        opacity: 0;
+        opacity: 1;
         -moz-transition: opacity .25s ease-in-out;
         -webkit-transition: opacity .25s ease-in-out;
         -o-transition: opacity .25s ease-in-out;
@@ -213,3 +224,4 @@ body {
     border-color: #FFF;
   };
 }
+
